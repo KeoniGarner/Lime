@@ -1,0 +1,238 @@
+// Here you can add other styles
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700|Signika+Negative:700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.col-sm-6.col-lg-2 > .card:hover {
+  cursor: pointer;
+  z-index: 9999999;
+  height: 95%;
+  width: 105%;
+  margin-left: -2.5%;
+  margin-top: -2.5%;
+}
+
+.card {
+  box-shadow: 0px 0px 10px rgba(180, 180, 180, 0.623);
+  border: 0px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+header.app-header.navbar {
+  border-bottom: 1px solid $primary;
+}
+
+.navbar-brand-full {
+  padding-left: 10px;
+}
+
+.has-account {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#title,
+#brand {
+  font-family: "Signika Negative", sans-serif !important;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.input-group-prepend,
+.input-group-text {
+  line-height: 1;
+  height: 33px;
+  border: none;
+  background: none;
+  margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+[class^="fa-"],
+[class*=" fa-"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+input[type="text"],
+input[type="text"]:focus {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-radius: 50px;
+}
+
+#submit {
+  border-radius: 0;
+  background: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: none;
+  border: none;
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes gradient-border {
+  0% {
+    background-image: linear-gradient(white, white),
+      linear-gradient(45deg, green, gold);
+  }
+  50% {
+    background-image: linear-gradient(white, white),
+      linear-gradient(45deg, green, gold);
+  }
+  100% {
+    background-image: linear-gradient(white, white),
+      linear-gradient(45deg, green, gold);
+  }
+}
+
+#search {
+  border: double 2px transparent;
+  border-radius: 30px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(45deg, green, gold);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: gradient-border 4s ease infinite;
+  display: flex;
+  flex-direction: row;
+}
+
+#form-control:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.bv-no-focus-ring {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.fingerprint-spinner,
+.fingerprint-spinner * {
+  box-sizing: border-box;
+}
+
+.fingerprint-spinner {
+  height: 64px;
+  width: 64px;
+  padding: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fingerprint-spinner .spinner-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: green;
+  animation: fingerprint-spinner-animation 1500ms
+    cubic-bezier(0.68, -0.75, 0.265, 1.75) infinite forwards;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(1) {
+  height: calc(60px / 9 + 0 * 60px / 9);
+  width: calc(60px / 9 + 0 * 60px / 9);
+  animation-delay: calc(50ms * 1);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(2) {
+  height: calc(60px / 9 + 1 * 60px / 9);
+  width: calc(60px / 9 + 1 * 60px / 9);
+  animation-delay: calc(50ms * 2);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(3) {
+  height: calc(60px / 9 + 2 * 60px / 9);
+  width: calc(60px / 9 + 2 * 60px / 9);
+  animation-delay: calc(50ms * 3);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(4) {
+  height: calc(60px / 9 + 3 * 60px / 9);
+  width: calc(60px / 9 + 3 * 60px / 9);
+  animation-delay: calc(50ms * 4);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(5) {
+  height: calc(60px / 9 + 4 * 60px / 9);
+  width: calc(60px / 9 + 4 * 60px / 9);
+  animation-delay: calc(50ms * 5);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(6) {
+  height: calc(60px / 9 + 5 * 60px / 9);
+  width: calc(60px / 9 + 5 * 60px / 9);
+  animation-delay: calc(50ms * 6);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(7) {
+  height: calc(60px / 9 + 6 * 60px / 9);
+  width: calc(60px / 9 + 6 * 60px / 9);
+  animation-delay: calc(50ms * 7);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(8) {
+  height: calc(60px / 9 + 7 * 60px / 9);
+  width: calc(60px / 9 + 7 * 60px / 9);
+  animation-delay: calc(50ms * 8);
+}
+
+.fingerprint-spinner .spinner-ring:nth-child(9) {
+  height: calc(60px / 9 + 8 * 60px / 9);
+  width: calc(60px / 9 + 8 * 60px / 9);
+  animation-delay: calc(50ms * 9);
+}
+
+@keyframes fingerprint-spinner-animation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#nav {
+  position: fixed;
+  width: 100%;
+}
+
+.sour {
+  float: right;
+}
+
+#lime {
+  width: 35px;
+  display: inline-block;
+}
+
+#lime > img {
+  width: 100%;
+  display: inline-block;
+}
