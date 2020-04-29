@@ -85,7 +85,7 @@ export default {
       this.loading = true;
       axios
         .get(
-          `https://factchecktools.googleapis.com/v1alpha1/claims:search?pageSize=1000&languageCode=en-US&query=${this.form.search}&key=AIzaSyDUNZX_FRdNqJ4IseD0nLUtuK7qs7GPGV8`
+          `https://factchecktools.googleapis.com/v1alpha1/claims:search?pageSize=1000&languageCode=en-US&query=${this.form.search}&key={apiKey}`
         )
         .then(response => {
           this.search = this.form.search;
